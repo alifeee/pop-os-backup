@@ -1,4 +1,4 @@
-# Pop!OS backup and setup
+# Pop!_OS backup and setup
 
 either for setting up new computers or for backing up/syncing setup between existing computers.
 
