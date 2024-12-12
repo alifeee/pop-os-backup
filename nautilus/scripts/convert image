@@ -1,0 +1,5 @@
+#!/bin/bash
+# convert an image from something to something else
+
+gnome-terminal -- bash -c 'bash ~/.local/share/nautilus/scripts/.convert\ image "'$1'"; sleep 1'
+

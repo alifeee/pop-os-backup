@@ -1,0 +1,23 @@
+#!/bin/bash
+# convert an image from something to something else
+
+original_image="${1}"
+
+echo "given file: ${original_image}"
+
+filename="${original_image%.*}"
+extension="${original_image##*.}"
+
+echo "converting ${original_image} from ${extension} format"
+read -p "to? (png/jpg/etc) " TO
+
+new_image="${filename}.${TO}"
+
+echo "run:"
+echo "convert ${original_image} ${new_image}"
+
+convert "${original_image}" "${new_image}"
+
+echo "done !"
+file "${new_image}"
+

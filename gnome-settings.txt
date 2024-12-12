@@ -1,0 +1,429 @@
+[Disks]
+image-dir-uri='file:///home/alifeee/Downloads'
+
+[Geary]
+migrated-config=true
+
+[Totem]
+active-plugins=['movie-properties', 'vimeo', 'screenshot', 'apple-trailers', 'screensaver', 'mpris', 'variable-rate', 'recent', 'rotation', 'autoload-subtitles', 'skipto', 'save-file', 'open-directory']
+subtitle-encoding='UTF-8'
+
+[baobab/ui]
+active-chart='rings'
+window-size=(929, 548)
+window-state=43908
+
+[calculator]
+accuracy=9
+angle-units='degrees'
+base=10
+button-mode='basic'
+number-format='automatic'
+show-thousands=false
+show-zeroes=false
+source-currency=''
+source-units='degree'
+target-currency=''
+target-units='radian'
+window-position=(1970, 50)
+word-size=64
+
+[charmap]
+group-by='block'
+last-char=uint32 8595
+
+[charmap/window-state]
+size=(1080, 589)
+
+[control-center]
+last-panel='wwan'
+
+[desktop/app-folders/folders/Pop-Office]
+apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-writer.desktop']
+name='Office'
+translate=true
+
+[desktop/app-folders/folders/Pop-System]
+apps=['gnome-language-selector.desktop', 'gnome-session-properties.desktop', 'gnome-system-monitor.desktop', 'im-config.desktop', 'nm-connection-editor.desktop', 'nvidia-settings.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.PowerStats.desktop', 'org.gnome.seahorse.Application.desktop', 'software-properties-gnome.desktop', 'system76-driver.desktop', 'system76-firmware.desktop']
+name='System'
+translate=true
+
+[desktop/app-folders/folders/Pop-Utility]
+apps=['com.github.donadigo.eddy.desktop', 'com.system76.Popsicle.desktop', 'gucharmap.desktop', 'info.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.Totem.desktop', 'pop-cosmic-applications.desktop', 'pop-cosmic-launcher.desktop', 'pop-cosmic-workspaces.desktop', 'simple-scan.desktop', 'yelp.desktop']
+name='Utilities'
+translate=true
+
+[desktop/input-sources]
+current=uint32 0
+per-window=false
+sources=[('xkb', 'gb')]
+xkb-options=['compose:ralt']
+
+[desktop/interface]
+clock-format='24h'
+color-scheme='prefer-dark'
+cursor-theme='oreo_purple_cursors'
+enable-hot-corners=false
+font-antialiasing='grayscale'
+font-hinting='slight'
+gtk-enable-primary-paste=false
+gtk-theme='Pop-dark'
+icon-theme='Pop'
+locate-pointer=false
+
+[desktop/notifications]
+application-children=['firefox', 'org-gnome-nautilus', 'org-gnome-terminal', 'discord', 'org-gnome-fileroller', 'thunderbird', 'org-gnome-gedit', 'com-github-donadigo-eddy', 'gnome-control-center', 'gnome-power-panel', 'io-elementary-appcenter', 'com-spotify-client', 'signal-desktop', 'org-gnome-baobab', 'org-gnome-eog', 'mountable-volume-4856313e56312dd6', 'steam', 'flatpak-installer', 'com-slack-slack', 'dbeaver-ce', 'mountable-volume-5d81ed862e250971', 'vlc', 'codium']
+
+[desktop/notifications/application/codium]
+application-id='codium.desktop'
+
+[desktop/notifications/application/com-github-donadigo-eddy]
+application-id='com.github.donadigo.eddy.desktop'
+
+[desktop/notifications/application/com-slack-slack]
+application-id='com.slack.Slack.desktop'
+
+[desktop/notifications/application/com-spotify-client]
+application-id='com.spotify.Client.desktop'
+
+[desktop/notifications/application/dbeaver-ce]
+application-id='dbeaver-ce.desktop'
+
+[desktop/notifications/application/discord]
+application-id='discord.desktop'
+
+[desktop/notifications/application/firefox]
+application-id='firefox.desktop'
+
+[desktop/notifications/application/flatpak-installer]
+application-id='flatpak-installer.desktop'
+
+[desktop/notifications/application/gnome-control-center]
+application-id='gnome-control-center.desktop'
+
+[desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[desktop/notifications/application/io-elementary-appcenter]
+application-id='io.elementary.appcenter.desktop'
+
+[desktop/notifications/application/mountable-volume-4856313e56312dd6]
+application-id='mountable-volume:4856313E56312DD6.desktop'
+
+[desktop/notifications/application/mountable-volume-5d81ed862e250971]
+application-id='mountable-volume:5D81ED862E250971.desktop'
+
+[desktop/notifications/application/org-gnome-baobab]
+application-id='org.gnome.baobab.desktop'
+
+[desktop/notifications/application/org-gnome-eog]
+application-id='org.gnome.eog.desktop'
+
+[desktop/notifications/application/org-gnome-fileroller]
+application-id='org.gnome.FileRoller.desktop'
+
+[desktop/notifications/application/org-gnome-gedit]
+application-id='org.gnome.gedit.desktop'
+
+[desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[desktop/notifications/application/org-gnome-terminal]
+application-id='org.gnome.Terminal.desktop'
+
+[desktop/notifications/application/signal-desktop]
+application-id='signal-desktop.desktop'
+
+[desktop/notifications/application/steam]
+application-id='steam.desktop'
+
+[desktop/notifications/application/thunderbird]
+application-id='thunderbird.desktop'
+
+[desktop/notifications/application/vlc]
+application-id='vlc.desktop'
+
+[desktop/peripherals/keyboard]
+numlock-state=true
+
+[desktop/peripherals/mouse]
+accel-profile='flat'
+natural-scroll=false
+speed=0.44117647058823528
+
+[desktop/peripherals/touchpad]
+disable-while-typing=true
+two-finger-scrolling-enabled=true
+
+[desktop/privacy]
+remove-old-temp-files=true
+remove-old-trash-files=true
+report-technical-problems=false
+
+[desktop/screensaver]
+lock-delay=uint32 0
+lock-enabled=true
+ubuntu-lock-on-suspend=true
+
+[desktop/session]
+idle-delay=uint32 900
+
+[desktop/wm/keybindings]
+cycle-windows=@as []
+cycle-windows-backward=@as []
+lower=['<Alt>Escape']
+minimize=['<Primary><Super>m']
+switch-applications=['<Super>Tab']
+switch-applications-backward=['<Shift><Super>Tab']
+switch-windows=['<Alt>Tab']
+switch-windows-backward=['<Shift><Alt>Tab']
+
+[desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
+
+[eog/ui]
+sidebar=true
+
+[eog/view]
+background-color='rgb(0,0,0)'
+extrapolate=false
+interpolate=true
+use-background-color=true
+
+[evince/default]
+window-ratio=(0.91339869281045749, 0.26515151515151514)
+
+[evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[file-roller/listing]
+list-mode='as-folder'
+name-column-width=250
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[file-roller/ui]
+sidebar-width=200
+window-height=732
+window-width=906
+
+[gedit/plugins]
+active-plugins=['openlinks', 'modelines', 'filebrowser', 'time', 'docinfo', 'sort', 'quickhighlight', 'spell']
+
+[gedit/plugins/filebrowser]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/alifeee/git/pop-os-backup'
+
+[gedit/plugins/time]
+prompt-type='prompt-selected-format'
+selected-format='%c'
+
+[gedit/preferences/editor]
+bracket-matching=true
+display-line-numbers=true
+highlight-current-line=true
+scheme='pop-dark'
+tabs-size=uint32 2
+use-default-font=true
+wrap-last-split-mode='word'
+wrap-mode='word'
+
+[gedit/preferences/ui]
+bottom-panel-visible=false
+show-tabs-mode='always'
+side-panel-visible=false
+statusbar-visible=true
+
+[gedit/state/file-chooser]
+open-recent=false
+
+[gedit/state/history-entry]
+replace-with-entry=['service-stations-ie.', 'service-stations-uk.geojson', 'service-stations-uk.csv']
+search-for-entry=['eircodes.', 'coordinates.geojson', 'coordinates.csv']
+
+[gedit/state/window]
+bottom-panel-size=139
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(960, 1001)
+state=87040
+
+[gnome-system-monitor]
+current-tab='disks'
+network-total-in-bits=false
+show-dependencies=false
+show-whose-processes='user'
+
+[gnome-system-monitor/disktreenew]
+col-6-visible=true
+col-6-width=0
+
+[mutter]
+edge-tiling=false
+
+[nautilus/compression]
+default-compression-format='zip'
+
+[nautilus/icon-view]
+default-zoom-level='large'
+
+[nautilus/list-view]
+use-tree-view=true
+
+[nautilus/preferences]
+default-folder-viewer='list-view'
+search-filter-time-type='last_modified'
+search-view='list-view'
+
+[nautilus/window-state]
+initial-size=(1432, 713)
+maximized=false
+
+[settings-daemon/plugins/color]
+night-light-enabled=true
+
+[settings-daemon/plugins/media-keys]
+calculator=@as []
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
+
+[settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1]
+binding='Launch1'
+command='gnome-control-center wifi'
+name='WiFi'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>z'
+command='gedit --new-window -s'
+name='launch text editor'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>c'
+command='gtk-launch clone.desktop'
+name='clone repository'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='<Primary><Shift><Alt>asciicircum'
+command='vlc https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_6music/bbc_6music.isml/bbc_6music-audio%3d96000.norewind.m3u8'
+name='open bbc radio 6 music'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom3]
+binding='<Primary><Super>c'
+command="bash -c 'dir=~/Pictures/Screenshots/; img=$(ls -t \"${dir}\" | head -n1); xclip -selection clipboard -target image/png -i \"${dir}${img}\"; notify-send \"copied image\" \"${img}\"'"
+name='copy latest sceenshot'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom4]
+binding='<Primary><Super>q'
+command="bash -c \"xclip -selection c -o | sed 's/^/> /' | xclip -selection c\"\n"
+name='quote clipboard item'
+
+[settings-daemon/plugins/power]
+sleep-inactive-ac-timeout=1800
+sleep-inactive-ac-type='suspend'
+sleep-inactive-battery-timeout=1800
+sleep-inactive-battery-type='suspend'
+
+[shell]
+command-history=['r']
+enabled-extensions=['ding@rastersoft.com', 'pop-cosmic@system76.com', 'pop-shell@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'cosmic-dock@system76.com', 'cosmic-workspaces@system76.com', 'popx11gestures@system76.com', 'dash-to-panel@jderose9.github.com', 'clipboard-indicator@tudmotu.com', 'sound-output-device-chooser@kgshank.net', 'extensions-sync@elhan.io']
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'codium.desktop', 'obsidian.desktop']
+had-bluetooth-devices-setup=true
+welcome-dialog-last-shown-version='42.9'
+
+[shell/app-switcher]
+current-workspace-only=true
+
+[shell/extensions/clipboard-indicator]
+disable-down-arrow=true
+display-mode=1
+move-item-first=true
+notify-on-copy=false
+preview-size=100
+strip-text=false
+toggle-menu=['<Control>F9']
+topbar-preview-size=25
+
+[shell/extensions/dash-to-dock]
+click-action='cycle-windows'
+dash-max-icon-size=36
+dock-alignment='CENTER'
+dock-fixed=true
+dock-position='BOTTOM'
+extend-height=false
+intellihide=false
+isolate-workspaces=true
+manualhide=true
+multi-monitor=true
+
+[shell/extensions/dash-to-panel]
+animate-app-switch=true
+animate-appicon-hover=false
+animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
+animate-window-launch=true
+appicon-margin=8
+appicon-padding=4
+available-monitors=[0, 1]
+dot-position='BOTTOM'
+dot-style-focused='DOTS'
+dot-style-unfocused='METRO'
+group-apps=true
+hide-overview-on-startup=false
+hot-keys=true
+hotkeys-overlay-combo='TEMPORARILY'
+intellihide=false
+isolate-monitors=false
+isolate-workspaces=true
+leftbox-padding=-1
+overview-click-to-exit=false
+panel-anchors='{"0":"MIDDLE","1":"MIDDLE"}'
+panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":true,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}],"1":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":true,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
+panel-lengths='{"0":100,"1":100}'
+panel-sizes='{"0":32,"1":32}'
+primary-monitor=1
+progress-show-count=true
+secondarymenu-contains-showdetails=true
+show-appmenu=false
+show-favorites=true
+show-favorites-all-monitors=true
+show-running-apps=true
+status-icon-padding=-1
+stockgs-force-hotcorner=false
+stockgs-keep-dash=false
+stockgs-keep-top-panel=false
+trans-bg-color='#613583'
+trans-use-custom-bg=true
+trans-use-custom-gradient=false
+trans-use-custom-opacity=true
+trans-use-dynamic-opacity=true
+tray-padding=-1
+tray-size=0
+window-preview-title-position='TOP'
+
+[shell/extensions/emoji-selector]
+recently-used=['😂', '❤️', '😍', '😭', '😊', '😒', '😘', '😩', '🤔', '☺️', '👌']
+
+[shell/extensions/extensions-sync]
+backup-file-location='file:///home/alifeee/git/pop-os-backup/gnome-extensions.txt'
+provider='Local'
+
+[shell/extensions/pop-cosmic]
+clock-alignment='RIGHT'
+overlay-key-action='LAUNCHER'
+show-workspaces-button=true
+
+[shell/extensions/pop-shell]
+active-hint=true
+active-hint-border-radius=uint32 1
+gap-inner=uint32 0
+gap-outer=uint32 0
+hint-color-rgba='rgb(128,101,68)'
+tile-by-default=true
+
+[shell/weather]
+automatic-location=true
+locations=@av []
+
+[system/location]
+enabled=false
