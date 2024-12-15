@@ -121,12 +121,6 @@ fi
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash --disable-up-arrow)"
 
-alias setclip="xclip -selection c"
-alias getclip="xclip -selection c -o"
-alias copy="history 2 | head -n1 | sed 's/^ *[0-9]* *//' | setclip"
-# alias copyout="!! | setclip" # cannot alias, but just type it, it's short
-alias quote="getclip | sed 's/^/> /' | setclip"
-
 export NVM_DIR="/usr/alifeee/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
