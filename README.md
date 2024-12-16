@@ -50,6 +50,10 @@ firefox https://extensions.gnome.org/local/
 # install https://github.com/oae/gnome-shell-extensions-sync
 # set local file to gnome-extensions.txt
 # click download
+
+# compare
+# cat files (after jq) to /tmp/backup and /tmp/current, then:
+git diff --no-index --word-diff=color --word-diff-regex="[^ \n\"=:']*" /tmp/backup /tmp/current
 ```
 
 ## gnome settings
