@@ -6,11 +6,13 @@ either for setting up new computers or for backing up/syncing setup between exis
 
 ```bash
 # backup
-copy scripts to gist
+# copy scripts to gist
 
 # restore
-curl "https://gist.githubusercontent.com/alifeee/bb0499e1272f312b82497031d28e91f2/raw/59195448f2edb8ce8f02ef8ca5954af628c3a112/clone.sh" > ~/Desktop/clone.sh
-curl "https://gist.githubusercontent.com/alifeee/bb0499e1272f312b82497031d28e91f2/raw/59195448f2edb8ce8f02ef8ca5954af628c3a112/clone.desktop" > /usr/share/applications/clone.desktop
+# copy gist (https://gist.github.com/alifeee/bb0499e1272f312b82497031d28e91f2) to scripts
+
+open ~/Desktop/clone.sh
+open /usr/share/applications/clone.desktop
 ```
 
 ## nautilus scripts
