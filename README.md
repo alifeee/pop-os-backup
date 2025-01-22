@@ -17,7 +17,7 @@ curl "https://gist.githubusercontent.com/alifeee/bb0499e1272f312b82497031d28e91f
 
 ```
 # backup
-cp -r ~/.local/share/nautilus/scripts nautilus/scripts
+cp -r ~/.local/share/nautilus/scripts/ nautilus/scripts
 git ...
 
 # restore
