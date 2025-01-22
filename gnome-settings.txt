@@ -36,7 +36,7 @@ last-char=uint32 8595
 size=(1080, 589)
 
 [control-center]
-last-panel='wwan'
+last-panel='keyboard'
 
 [desktop/app-folders/folders/Pop-Office]
 apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-writer.desktop']
@@ -70,6 +70,7 @@ gtk-enable-primary-paste=false
 gtk-theme='Pop-dark'
 icon-theme='Pop'
 locate-pointer=false
+show-battery-percentage=true
 
 [desktop/notifications]
 application-children=['firefox', 'org-gnome-nautilus', 'org-gnome-terminal', 'discord', 'org-gnome-fileroller', 'thunderbird', 'org-gnome-gedit', 'com-github-donadigo-eddy', 'gnome-control-center', 'gnome-power-panel', 'io-elementary-appcenter', 'com-spotify-client', 'signal-desktop', 'org-gnome-baobab', 'org-gnome-eog', 'mountable-volume-4856313e56312dd6', 'steam', 'flatpak-installer', 'com-slack-slack', 'dbeaver-ce', 'mountable-volume-5d81ed862e250971', 'vlc', 'codium']
@@ -149,10 +150,14 @@ numlock-state=true
 [desktop/peripherals/mouse]
 accel-profile='flat'
 natural-scroll=false
-speed=0.44117647058823528
+speed=0.64705882352941169
 
 [desktop/peripherals/touchpad]
+click-method='areas'
 disable-while-typing=true
+natural-scroll=true
+speed=0.16911764705882359
+tap-to-click=true
 two-finger-scrolling-enabled=true
 
 [desktop/privacy]
@@ -191,7 +196,7 @@ interpolate=true
 use-background-color=true
 
 [evince/default]
-window-ratio=(0.91339869281045749, 0.26515151515151514)
+window-ratio=(0.91325130700821111, 0.26546487220644527)
 
 [evolution-data-server]
 migrated=true
@@ -215,7 +220,7 @@ active-plugins=['openlinks', 'modelines', 'filebrowser', 'time', 'docinfo', 'sor
 [gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/alifeee/git/pop-os-backup'
+virtual-root='file:///var/www/chipex/site-files/wp-content'
 
 [gedit/plugins/time]
 prompt-type='prompt-selected-format'
@@ -248,7 +253,7 @@ search-for-entry=['eircodes.', 'coordinates.geojson', 'coordinates.csv']
 bottom-panel-size=139
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(960, 1001)
+size=(963, 402)
 state=87040
 
 [gnome-system-monitor]
@@ -262,7 +267,8 @@ col-6-visible=true
 col-6-width=0
 
 [mutter]
-edge-tiling=false
+edge-tiling=true
+experimental-features=@as []
 
 [nautilus/compression]
 default-compression-format='zip'
@@ -271,15 +277,16 @@ default-compression-format='zip'
 default-zoom-level='large'
 
 [nautilus/list-view]
+default-zoom-level='small'
 use-tree-view=true
 
 [nautilus/preferences]
-default-folder-viewer='list-view'
+default-folder-viewer='icon-view'
 search-filter-time-type='last_modified'
 search-view='list-view'
 
 [nautilus/window-state]
-initial-size=(1432, 713)
+initial-size=(1432, 700)
 maximized=false
 
 [settings-daemon/plugins/color]
@@ -287,7 +294,7 @@ night-light-enabled=true
 
 [settings-daemon/plugins/media-keys]
 calculator=@as []
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/']
 
 [settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1]
 binding='Launch1'
@@ -305,19 +312,29 @@ command='gtk-launch clone.desktop'
 name='clone repository'
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom2]
-binding='<Primary><Shift><Alt>asciicircum'
-command='vlc https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_6music/bbc_6music.isml/bbc_6music-audio%3d96000.norewind.m3u8'
-name='open bbc radio 6 music'
-
-[settings-daemon/plugins/media-keys/custom-keybindings/custom3]
 binding='<Primary><Super>c'
 command="bash -c 'dir=~/Pictures/Screenshots/; img=$(ls -t \"${dir}\" | head -n1); xclip -selection clipboard -target image/png -i \"${dir}${img}\"; notify-send \"copied image\" \"${img}\"'"
-name='copy latest sceenshot'
+name='copy latest screenshot'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom3]
+binding='<Primary><Super>q'
+command="bash -c 'xclip -selection c -o | sed \"s/^/> /\" | xclip -selection c'"
+name='quote clipboard'
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom4]
-binding='<Primary><Super>q'
-command="bash -c \"xclip -selection c -o | sed 's/^/> /' | xclip -selection c\"\n"
-name='quote clipboard item'
+binding='<Primary><Shift><Super>dollar'
+command='vlc "http://solid41.streamupsolutions.com:10062/;stream.nsv"'
+name='radio: forge radio'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom5]
+binding='<Primary><Shift><Super>asciicircum'
+command='vlc "https://a.files.bbci.co.uk/ms6/live/3441A116-B12E-4D2F-ACA8-C1984642FA4B/audio/simulcast/dash/uk/pc_hd_abr_v2/cfs/bbc_6music.mpd"'
+name='radio: bbc radio 6 music'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom6]
+binding='<Primary><Shift><Super>percent'
+command='vlc "https://streamer.radio.co/s1afcca186/listen"'
+name='radio: mondo radio'
 
 [settings-daemon/plugins/power]
 sleep-inactive-ac-timeout=1800
@@ -381,7 +398,7 @@ panel-anchors='{"0":"MIDDLE","1":"MIDDLE"}'
 panel-element-positions='{"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":true,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}],"1":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":true,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"stackedTL"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
 panel-lengths='{"0":100,"1":100}'
 panel-sizes='{"0":32,"1":32}'
-primary-monitor=1
+primary-monitor=0
 progress-show-count=true
 secondarymenu-contains-showdetails=true
 show-appmenu=false
@@ -419,7 +436,7 @@ active-hint-border-radius=uint32 1
 gap-inner=uint32 0
 gap-outer=uint32 0
 hint-color-rgba='rgb(128,101,68)'
-tile-by-default=true
+tile-by-default=false
 
 [shell/weather]
 automatic-location=true
