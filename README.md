@@ -24,7 +24,7 @@ git ...
 
 # restore
 mkdir -p ~/.local/share/nautilus/scripts
-cp -r nautilus/scripts ~/.local/share/nautilus/scripts
+cp -r nautilus/scripts/. ~/.local/share/nautilus/scripts
 ```
 
 ## `.bashrc`
