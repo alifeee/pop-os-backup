@@ -9,15 +9,18 @@ either for setting up new computers or for backing up/syncing setup between exis
 # copy scripts to gist
 
 # restore
-# copy gist (https://gist.github.com/alifeee/bb0499e1272f312b82497031d28e91f2) to scripts
+# copy gist 1 (https://gist.github.com/alifeee/bb0499e1272f312b82497031d28e91f2) to scripts
+# copy gist 2 (https://gist.github.com/alifeee/c3bf377a2701a62c3f103e908ad83ea8) to scripts
 
 open ~/Desktop/clone.sh
 open /usr/share/applications/clone.desktop
+open /usr/bin/upload-file.sh
+open /usr/share/applications/upload-file.desktop
 ```
 
 ## nautilus scripts
 
-```
+```bash
 # backup
 cp -r ~/.local/share/nautilus/scripts/ nautilus/scripts
 git ...
@@ -29,7 +32,7 @@ cp -r nautilus/scripts/. ~/.local/share/nautilus/scripts
 
 ## `.bashrc`
 
-```
+```bash
 # backup
 cp ~/.bashrc .bashrc
 
@@ -89,4 +92,3 @@ echo -e '[dotfiles]\nenabled = true' >> ~/.config/atuin/config.toml
 # probably this, then add folders
 sudo apt install syncthing
 ```
-

@@ -9,7 +9,7 @@ active-plugins=['movie-properties', 'vimeo', 'screenshot', 'apple-trailers', 'sc
 subtitle-encoding='UTF-8'
 
 [baobab/ui]
-active-chart='rings'
+active-chart='treemap'
 window-size=(929, 548)
 window-state=43908
 
@@ -53,14 +53,23 @@ apps=['com.github.donadigo.eddy.desktop', 'com.system76.Popsicle.desktop', 'guch
 name='Utilities'
 translate=true
 
+[desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/alifeee/Pictures/Screenshots/Screenshot from 2025-03-13 10-36-40.png'
+picture-uri-dark='file:///usr/share/backgrounds/pop/kate-hazen-pop-retro2.png'
+primary-color='#000000'
+secondary-color='#000000'
+
 [desktop/input-sources]
 current=uint32 0
 per-window=false
 sources=[('xkb', 'gb')]
-xkb-options=['compose:ralt']
+xkb-options=['compose:ralt', 'lv3:ralt_alt']
 
 [desktop/interface]
 clock-format='24h'
+clock-show-seconds=true
 color-scheme='prefer-dark'
 cursor-theme='oreo_purple_cursors'
 enable-hot-corners=false
@@ -73,7 +82,7 @@ locate-pointer=false
 show-battery-percentage=true
 
 [desktop/notifications]
-application-children=['firefox', 'org-gnome-nautilus', 'org-gnome-terminal', 'discord', 'org-gnome-fileroller', 'thunderbird', 'org-gnome-gedit', 'com-github-donadigo-eddy', 'gnome-control-center', 'gnome-power-panel', 'io-elementary-appcenter', 'com-spotify-client', 'signal-desktop', 'org-gnome-baobab', 'org-gnome-eog', 'mountable-volume-4856313e56312dd6', 'steam', 'flatpak-installer', 'com-slack-slack', 'dbeaver-ce', 'mountable-volume-5d81ed862e250971', 'vlc', 'codium']
+application-children=['firefox', 'org-gnome-nautilus', 'org-gnome-terminal', 'discord', 'org-gnome-fileroller', 'thunderbird', 'org-gnome-gedit', 'com-github-donadigo-eddy', 'gnome-control-center', 'gnome-power-panel', 'io-elementary-appcenter', 'com-spotify-client', 'signal-desktop', 'org-gnome-baobab', 'org-gnome-eog', 'mountable-volume-4856313e56312dd6', 'steam', 'flatpak-installer', 'com-slack-slack', 'dbeaver-ce', 'mountable-volume-5d81ed862e250971', 'vlc', 'codium', 'telegramdesktop', 'psi', 'libreoffice-calc', 'org-gnome-diskutility', 'obsidian', 'pinta', 'gnome-network-panel', 'godot', 'gnome-printers-panel', 'org-squidowl-halloy']
 
 [desktop/notifications/application/codium]
 application-id='codium.desktop'
@@ -102,11 +111,23 @@ application-id='flatpak-installer.desktop'
 [desktop/notifications/application/gnome-control-center]
 application-id='gnome-control-center.desktop'
 
+[desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
+
 [desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
 
+[desktop/notifications/application/gnome-printers-panel]
+application-id='gnome-printers-panel.desktop'
+
+[desktop/notifications/application/godot]
+application-id='godot.desktop'
+
 [desktop/notifications/application/io-elementary-appcenter]
 application-id='io.elementary.appcenter.desktop'
+
+[desktop/notifications/application/libreoffice-calc]
+application-id='libreoffice-calc.desktop'
 
 [desktop/notifications/application/mountable-volume-4856313e56312dd6]
 application-id='mountable-volume:4856313E56312DD6.desktop'
@@ -114,8 +135,14 @@ application-id='mountable-volume:4856313E56312DD6.desktop'
 [desktop/notifications/application/mountable-volume-5d81ed862e250971]
 application-id='mountable-volume:5D81ED862E250971.desktop'
 
+[desktop/notifications/application/obsidian]
+application-id='obsidian.desktop'
+
 [desktop/notifications/application/org-gnome-baobab]
 application-id='org.gnome.baobab.desktop'
+
+[desktop/notifications/application/org-gnome-diskutility]
+application-id='org.gnome.DiskUtility.desktop'
 
 [desktop/notifications/application/org-gnome-eog]
 application-id='org.gnome.eog.desktop'
@@ -132,11 +159,23 @@ application-id='org.gnome.Nautilus.desktop'
 [desktop/notifications/application/org-gnome-terminal]
 application-id='org.gnome.Terminal.desktop'
 
+[desktop/notifications/application/org-squidowl-halloy]
+application-id='org.squidowl.halloy.desktop'
+
+[desktop/notifications/application/pinta]
+application-id='pinta.desktop'
+
+[desktop/notifications/application/psi]
+application-id='psi.desktop'
+
 [desktop/notifications/application/signal-desktop]
 application-id='signal-desktop.desktop'
 
 [desktop/notifications/application/steam]
 application-id='steam.desktop'
+
+[desktop/notifications/application/telegramdesktop]
+application-id='telegramdesktop.desktop'
 
 [desktop/notifications/application/thunderbird]
 application-id='thunderbird.desktop'
@@ -166,8 +205,13 @@ remove-old-trash-files=true
 report-technical-problems=false
 
 [desktop/screensaver]
+color-shading-type='solid'
 lock-delay=uint32 0
 lock-enabled=true
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/pop/kate-hazen-pop-retro2.png'
+primary-color='#000000'
+secondary-color='#000000'
 ubuntu-lock-on-suspend=true
 
 [desktop/session]
@@ -220,7 +264,7 @@ active-plugins=['openlinks', 'modelines', 'filebrowser', 'time', 'docinfo', 'sor
 [gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///var/www/chipex/site-files/wp-content'
+virtual-root='file:///usr/share/applications'
 
 [gedit/plugins/time]
 prompt-type='prompt-selected-format'
@@ -246,15 +290,20 @@ statusbar-visible=true
 open-recent=false
 
 [gedit/state/history-entry]
-replace-with-entry=['service-stations-ie.', 'service-stations-uk.geojson', 'service-stations-uk.csv']
-search-for-entry=['eircodes.', 'coordinates.geojson', 'coordinates.csv']
+replace-with-entry=['search', 'thompson', 'disabled', 'service-stations-ie.', 'service-stations-uk.geojson', 'service-stations-uk.csv']
+search-for-entry=['match', 'wadbrough', 'skipped', 'eircodes.', 'coordinates.geojson', 'coordinates.csv']
 
 [gedit/state/window]
 bottom-panel-size=139
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(963, 402)
-state=87040
+size=(814, 571)
+state=87168
+
+[gnome-screenshot]
+delay=3
+include-pointer=false
+last-save-directory='file:///home/alifeee/Pictures/Screenshots'
 
 [gnome-system-monitor]
 current-tab='disks'
@@ -286,15 +335,36 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [nautilus/window-state]
-initial-size=(1432, 700)
+initial-size=(1607, 887)
 maximized=false
+sidebar-width=189
+
+[nm-applet/eap/044ce898-0d35-42bc-b0f8-1c5f6dc8f6d7]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[nm-applet/eap/4b207b57-b6c7-4299-b370-8adbebf28af5]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[nm-applet/eap/70307466-1313-475a-9e97-0a435056feda]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[nm-applet/eap/9b652840-1792-4363-bd6e-e4888d609b6e]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[nm-applet/eap/b4735a8f-1e44-4ff4-b416-82f387a05df5]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
 [settings-daemon/plugins/color]
 night-light-enabled=true
 
 [settings-daemon/plugins/media-keys]
 calculator=@as []
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/']
 
 [settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1]
 binding='Launch1'
@@ -336,6 +406,16 @@ binding='<Primary><Shift><Super>percent'
 command='vlc "https://streamer.radio.co/s1afcca186/listen"'
 name='radio: mondo radio'
 
+[settings-daemon/plugins/media-keys/custom-keybindings/custom7]
+binding='<Super>x'
+command='xkill'
+name='xkill'
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom8]
+binding='<Super>v'
+command='gtk-launch upload-file.desktop'
+name='upload file'
+
 [settings-daemon/plugins/power]
 sleep-inactive-ac-timeout=1800
 sleep-inactive-ac-type='suspend'
@@ -344,23 +424,38 @@ sleep-inactive-battery-type='suspend'
 
 [shell]
 command-history=['r']
-enabled-extensions=['ding@rastersoft.com', 'pop-cosmic@system76.com', 'pop-shell@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'cosmic-dock@system76.com', 'cosmic-workspaces@system76.com', 'popx11gestures@system76.com', 'dash-to-panel@jderose9.github.com', 'clipboard-indicator@tudmotu.com', 'sound-output-device-chooser@kgshank.net', 'extensions-sync@elhan.io']
-favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'codium.desktop', 'obsidian.desktop']
+enabled-extensions=['ding@rastersoft.com', 'pop-cosmic@system76.com', 'pop-shell@system76.com', 'system76-power@system76.com', 'ubuntu-appindicators@ubuntu.com', 'cosmic-dock@system76.com', 'cosmic-workspaces@system76.com', 'popx11gestures@system76.com', 'dash-to-panel@jderose9.github.com', 'clipboard-indicator@tudmotu.com', 'sound-output-device-chooser@kgshank.net', 'extensions-sync@elhan.io', 'color-picker@tuberry']
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Terminal.desktop']
 had-bluetooth-devices-setup=true
 welcome-dialog-last-shown-version='42.9'
 
 [shell/app-switcher]
 current-workspace-only=true
 
+[shell/extensions/backslide]
+delay=1
+elapsed-time=0
+image-list=@as []
+random=true
+
 [shell/extensions/clipboard-indicator]
 disable-down-arrow=true
 display-mode=1
+history-size=50
 move-item-first=true
 notify-on-copy=false
 preview-size=100
 strip-text=false
 toggle-menu=['<Control>F9']
 topbar-preview-size=25
+
+[shell/extensions/color-picker]
+color-picker-shortcut=['<Super>backslash']
+colors-history='#3f3b39|#2c4038|#1f1f1f|#18181a|#3f3b39|#0d0c12|#686d71|#433d3f'
+enable-shortcut=true
+menu-style=false
+persistent-mode=false
+systray-dropper-icon=''
 
 [shell/extensions/dash-to-dock]
 click-action='cycle-windows'
@@ -418,6 +513,9 @@ tray-padding=-1
 tray-size=0
 window-preview-title-position='TOP'
 
+[shell/extensions/ding]
+arrangeorder='NAME'
+
 [shell/extensions/emoji-selector]
 recently-used=['😂', '❤️', '😍', '😭', '😊', '😒', '😘', '😩', '🤔', '☺️', '👌']
 
@@ -437,6 +535,9 @@ gap-inner=uint32 0
 gap-outer=uint32 0
 hint-color-rgba='rgb(128,101,68)'
 tile-by-default=false
+
+[shell/keybindings]
+toggle-message-tray=@as []
 
 [shell/weather]
 automatic-location=true
