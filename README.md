@@ -92,3 +92,13 @@ echo -e '[dotfiles]\nenabled = true' >> ~/.config/atuin/config.toml
 # probably this, then add folders
 sudo apt install syncthing
 ```
+
+## conky configuration
+
+```bash
+# backup
+cp ~/.config/conky/conky.conf ./.config/conky/conky.conf
+
+# restore
+cp ./.config/conky/conky.conf ~/.config/conky/conky.conf
+```
