@@ -59,8 +59,8 @@ translate=true
 [desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/alifeee/Pictures/Screenshots/Screenshot from 2025-03-13 10-36-40.png'
-picture-uri-dark='file:///usr/share/backgrounds/pop/kate-hazen-pop-retro2.png'
+picture-uri='file:///home/alifeee/git/process-wallpaper/wallpaper.png'
+picture-uri-dark='file:///home/alifeee/git/process-wallpaper/wallpaper.png'
 primary-color='#000000'
 secondary-color='#000000'
 
@@ -452,7 +452,7 @@ name='xkill'
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom8]
 binding='<Super>v'
-command='gtk-launch upload-file.desktop'
+command='/usr/bin/upload-file.sh'
 name='upload file'
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom9]
