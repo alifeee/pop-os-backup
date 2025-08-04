@@ -38,6 +38,9 @@ size=(1080, 589)
 [control-center]
 last-panel='keyboard'
 
+[desktop/a11y/keyboard]
+mousekeys-enable=false
+
 [desktop/app-folders/folders/Pop-Office]
 apps=['libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'libreoffice-impress.desktop', 'libreoffice-math.desktop', 'libreoffice-startcenter.desktop', 'libreoffice-writer.desktop']
 name='Office'
@@ -84,6 +87,9 @@ show-battery-percentage=true
 [desktop/notifications]
 application-children=['firefox', 'org-gnome-nautilus', 'org-gnome-terminal', 'discord', 'org-gnome-fileroller', 'thunderbird', 'org-gnome-gedit', 'com-github-donadigo-eddy', 'gnome-control-center', 'gnome-power-panel', 'io-elementary-appcenter', 'com-spotify-client', 'signal-desktop', 'org-gnome-baobab', 'org-gnome-eog', 'mountable-volume-4856313e56312dd6', 'steam', 'flatpak-installer', 'com-slack-slack', 'dbeaver-ce', 'mountable-volume-5d81ed862e250971', 'vlc', 'codium', 'telegramdesktop', 'psi', 'libreoffice-calc', 'org-gnome-diskutility', 'obsidian', 'pinta', 'gnome-network-panel', 'godot', 'gnome-printers-panel', 'org-squidowl-halloy']
 
+[desktop/notifications/application/calibre-gui]
+application-id='calibre-gui.desktop'
+
 [desktop/notifications/application/codium]
 application-id='codium.desktop'
 
@@ -101,6 +107,9 @@ application-id='dbeaver-ce.desktop'
 
 [desktop/notifications/application/discord]
 application-id='discord.desktop'
+
+[desktop/notifications/application/display-im6-q16]
+application-id='display-im6.q16.desktop'
 
 [desktop/notifications/application/firefox]
 application-id='firefox.desktop'
@@ -159,6 +168,12 @@ application-id='org.gnome.Nautilus.desktop'
 [desktop/notifications/application/org-gnome-terminal]
 application-id='org.gnome.Terminal.desktop'
 
+[desktop/notifications/application/org-inkscape-inkscape]
+application-id='org.inkscape.Inkscape.desktop'
+
+[desktop/notifications/application/org-localsend-localsend-app]
+application-id='org.localsend.localsend_app.desktop'
+
 [desktop/notifications/application/org-squidowl-halloy]
 application-id='org.squidowl.halloy.desktop'
 
@@ -182,6 +197,9 @@ application-id='thunderbird.desktop'
 
 [desktop/notifications/application/vlc]
 application-id='vlc.desktop'
+
+[desktop/notifications/application/xdg-desktop-portal-gnome]
+application-id='xdg-desktop-portal-gnome.desktop'
 
 [desktop/peripherals/keyboard]
 numlock-state=true
@@ -271,8 +289,12 @@ prompt-type='prompt-selected-format'
 selected-format='%c'
 
 [gedit/preferences/editor]
+background-pattern='none'
 bracket-matching=true
 display-line-numbers=true
+display-overview-map=false
+display-right-margin=false
+editor-font='Fira Mono 10'
 highlight-current-line=true
 scheme='pop-dark'
 tabs-size=uint32 2
@@ -343,6 +365,10 @@ sidebar-width=189
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[nm-applet/eap/1ebbde68-f464-4ba2-baeb-50b2bfaf0b8b]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [nm-applet/eap/4b207b57-b6c7-4299-b370-8adbebf28af5]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
@@ -355,12 +381,25 @@ ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[nm-applet/eap/9f518373-dbbc-4090-a451-ec41ea5164f2]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
 [nm-applet/eap/b4735a8f-1e44-4ff4-b416-82f387a05df5]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[nm-applet/eap/bd88d072-2186-4b2b-b5d5-8ecf89c4588f]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[nm-applet/eap/ed31cd89-0220-4e6c-bc63-045aec03b44b]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [settings-daemon/plugins/color]
 night-light-enabled=true
+night-light-temperature=uint32 2330
 
 [settings-daemon/plugins/media-keys]
 calculator=@as []
@@ -416,6 +455,11 @@ binding='<Super>v'
 command='gtk-launch upload-file.desktop'
 name='upload file'
 
+[settings-daemon/plugins/media-keys/custom-keybindings/custom9]
+binding='<Primary><Super>w'
+command='space'
+name='pre-space clipboard'
+
 [settings-daemon/plugins/power]
 sleep-inactive-ac-timeout=1800
 sleep-inactive-ac-type='suspend'
@@ -453,6 +497,7 @@ topbar-preview-size=25
 color-picker-shortcut=['<Super>backslash']
 colors-history='#3f3b39|#2c4038|#1f1f1f|#18181a|#3f3b39|#0d0c12|#686d71|#433d3f'
 enable-shortcut=true
+enable-systray=true
 menu-style=false
 persistent-mode=false
 systray-dropper-icon=''
@@ -515,6 +560,11 @@ window-preview-title-position='TOP'
 
 [shell/extensions/ding]
 arrangeorder='NAME'
+icon-size='tiny'
+show-home=false
+show-network-volumes=false
+show-trash=false
+show-volumes=false
 
 [shell/extensions/emoji-selector]
 recently-used=['😂', '❤️', '😍', '😭', '😊', '😒', '😘', '😩', '🤔', '☺️', '👌']
@@ -522,10 +572,12 @@ recently-used=['😂', '❤️', '😍', '😭', '😊', '😒', '😘', '😩',
 [shell/extensions/extensions-sync]
 backup-file-location='file:///home/alifeee/git/pop-os-backup/gnome-extensions.txt'
 provider='Local'
+show-tray-icon=false
 
 [shell/extensions/pop-cosmic]
 clock-alignment='RIGHT'
 overlay-key-action='LAUNCHER'
+show-applications-button=false
 show-workspaces-button=true
 
 [shell/extensions/pop-shell]
