@@ -128,3 +128,7 @@ export NVM_DIR="/usr/alifeee/.nvm"
 # prepend "color" to any command to make stderr look red
 color()(set -o pipefail;"$@" 2> >(sed $'s,.*,\e[31m&\e[m,'>&2))
 export -f color
+
+# install from pop os backup with
+# cp ./ascii_moon_phase /usr/lib/python3.10/ascii_moon_phase
+py -m ascii_moon_phase --show-phase --size 16
