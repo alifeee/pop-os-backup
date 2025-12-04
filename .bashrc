@@ -131,4 +131,4 @@ export -f color
 
 # install from pop os backup with
 # cp ./ascii_moon_phase /usr/lib/python3.10/ascii_moon_phase
-py -m ascii_moon_phase --show-phase --size 16
+py -m ascii_moon_phase --show-phase --size 16 --show-next-milestone

@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 import argparse
-from datetime import date
-from . import render_moon, date_to_moon_phase, animate_phases, animate_future
+from datetime import date, datetime, timedelta, timezone
+from . import render_moon, date_to_moon_phase, animate_phases, animate_future, SYNODIC_MONTH
+import math
 
 
 def _parse_date(s: str) -> date:
@@ -34,6 +35,8 @@ def main() -> None:
                         help="Character outside the disc (default: space).")
     parser.add_argument("--show-phase", action="store_true",
                         help="Print the numeric phase after the art.")
+    parser.add_argument("--show-next-milestone", action="store_true",
+                        help="Print the time until next milestone.")
     parser.add_argument("--phases", action="store_true",
                         help="Animate the full cycle of lunar phases.")
     parser.add_argument("--future", action="store_true",
@@ -64,16 +67,18 @@ def main() -> None:
 
     northern = (args.hemisphere == "north")
 
+    phase_datetime = (datetime(args.date.year, args.date.month, args.date.day, 12, 0, 0, tzinfo=timezone.utc) if args.date is not None else datetime.now(timezone.utc).astimezone())
+
     moon_str = render_moon(
         size=args.size,
         northern_hemisphere=northern,
-        phase_date=args.date,
+        phase_datetime=phase_datetime,
         light_char=args.light_char,
         dark_char=args.dark_char,
         empty_char=args.empty_char,
         phase=args.phase,
     )
-    p = date_to_moon_phase(args.date)
+    p = date_to_moon_phase(phase_datetime)
 
     print(moon_str)
 
@@ -85,6 +90,23 @@ def main() -> None:
         else:
             status = "waning"
         print(f"\nphase={p:.6f}  ({status})")
+    if args.show_next_milestone:
+        next_p = math.ceil(p*4)/4
+        days_til_next_phase = (next_p - p) * SYNODIC_MONTH
+        next_phase_date = (phase_datetime if phase_datetime is not None else datetime.now()) + timedelta(days=days_til_next_phase)
+        match next_p:
+            case 0.25:
+                next_phase = "Half Moon"
+            case 0.5:
+                next_phase = "Full Moon"
+            case 0.75:
+                next_phase = "Half Moon"
+            case 1.0:
+                next_phase = "New Moon"
+        print(
+            f"{next_phase} in {days_til_next_phase:.2f} days "
+            f"({next_phase_date.strftime('%H:%M on %d %b')})"
+        )
 
 
 if __name__ == "__main__":

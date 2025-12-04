@@ -30,7 +30,7 @@ def _julian_day(dt_utc: datetime) -> float:
     return int(365.25 * (y + 4716)) + int(30.6001 * (m + 1)) + d + B - 1524.5
 
 
-def date_to_moon_phase(phase_date: date | None = None) -> float:
+def date_to_moon_phase(phase_datetime: datetime | None = None) -> float:
     """
     Return lunar phase fraction p = [0.0, 1.0]:
       0.0 = new, 0.5 = full, 1.0 = new (again).
@@ -38,9 +38,7 @@ def date_to_moon_phase(phase_date: date | None = None) -> float:
 
     Uses 12:00 UTC on the given date to avoid timezone boundary issues.
     """
-    if phase_date is None:
-        phase_date = date.today()
-    dt_utc = datetime(phase_date.year, phase_date.month, phase_date.day, 12, 0, 0, tzinfo=timezone.utc)
+    dt_utc = phase_datetime
     p = ((_julian_day(dt_utc) - REF_JD) / SYNODIC_MONTH) % 1.0
     return p
 
@@ -48,7 +46,7 @@ def date_to_moon_phase(phase_date: date | None = None) -> float:
 def render_moon(
     size: int = 24,
     northern_hemisphere: bool = True,
-    phase_date: date | None = None,
+    phase_datetime: date | None = None,
     light_char: str = "@",
     dark_char: str = ".",
     empty_char: str = " ",
@@ -57,7 +55,7 @@ def render_moon(
 ) -> str:
     """Render from a calendar date."""
     if phase is None:
-        phase = date_to_moon_phase(phase_date)
+        phase = date_to_moon_phase(phase_datetime)
 
     if size < 2:
         raise ValueError("size must be at least 2")
@@ -119,7 +117,7 @@ def animate_future(size: int = 24,
     try:
         dt = date.today()
         while True:
-            print(render_moon(size=size, northern_hemisphere=northern_hemisphere, light_char=light_char, dark_char=dark_char, empty_char=empty_char, phase_date=dt))
+            print(render_moon(size=size, northern_hemisphere=northern_hemisphere, light_char=light_char, dark_char=dark_char, empty_char=empty_char, phase_datetime=dt))
             print(dt.strftime('%a %b %d, %Y'))
             time.sleep(delay)
             os.system('cls' if os.name == 'nt' else 'clear')
