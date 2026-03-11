@@ -1,3 +1,5 @@
+> [!CAUTION]
+> MOVED! see <https://git.alifeee.net/pop-os-backup/about/>
 # Pop!_OS backup and setup
 
 either for setting up new computers or for backing up/syncing setup between existing computers.
